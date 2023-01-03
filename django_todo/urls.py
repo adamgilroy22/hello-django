@@ -20,6 +20,6 @@ from todo.views import get_todo_list, add_item, edit_item
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', get_todo_list, name='get_todo_list'),
-    path('add', add_item, name='add_item'),
+    path('add', add_item, name='add'),
     path('edit/<item_id>', edit_item, name='edit')
 ]
