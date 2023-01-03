@@ -19,9 +19,9 @@ def add_item(request):
         Item.objects.create(name=name, done=done)
 
         return redirect('get_todo_list')
-        form = ItemForm()
-        context = {
-            'form': form
-        }
+    form = ItemForm()
+    context = {
+        'form': form
+    }
 
     return render(request, 'todo/add_item.html', context)
