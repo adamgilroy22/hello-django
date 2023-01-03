@@ -28,6 +28,12 @@ class TestItemForm(TestCase):
         form = ItemForm({'name': 'Test Todo Items'})
         self.assertTrue(form.is_valid())
 
+    '''
+    1. Create an empty form instance 
+    2. check that the meta fields are equal to "name" and "done"
+
+
+    '''
     def test_fields_are_explicit_in_form_metaclass(self):
         form = ItemForm()
         self.assertEqual(form.Meta.fields, ['name', 'done'])
