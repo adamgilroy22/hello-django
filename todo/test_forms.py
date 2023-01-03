@@ -29,7 +29,7 @@ class TestItemForm(TestCase):
         self.assertTrue(form.is_valid())
 
     '''
-    1. Create an empty form instance 
+    1. Create an empty form instance
     2. check that the meta fields are equal to "name" and "done"
 
 
